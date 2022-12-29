@@ -1,0 +1,17 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title PNR Search-ROSH Railways
+  link(rel='icon' href='../static/Images/favicon.png')
+  link(rel='stylesheet' href='../static/style_login_and_register.css')
+  link(href='https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap' rel='stylesheet')
+header#header
+    #navig
+      img#logo1.head(src='../static/Images/final logo.png' alt='Logo')
+main.back
+  h1#search_res Admin Page
+  form.admin_form(action='/admin_search' method="post")
+    input#inputadmin(type='text' placeholder='Enter train number' name="train_no")
+    button#search_but Search
+  form.admin_form(action='/logout' method="post")
+    button.admin_logout Logout

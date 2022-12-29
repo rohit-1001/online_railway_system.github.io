@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#navig{
+    z-index: 10;
+    display: block;
+    overflow: auto;
+    background-color: rgb(32, 85, 169);
+    width: 100%;
+    height: 3.5vw;
+    position: fixed;
+}
+#logo{  
+    float: left;
+    height: 3.5vw;
+}
+#heading{
+    margin-top: 3px;
+    float: left;
+}
+#tag_line{
+    margin-top: 5px;
+    float: left;
+}
+#emblem{
+    height: 80px; 
+    float: right;
+    margin-right: 20px;
+}
+#head{
+    margin-top:5px; 
+}
+.nav{
+    float: right;
+    padding: 1vw;
+    font-size: 1.2vw;
+}
+.nav-link{
+    text-decoration: none;
+    margin-right: 35px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.nav-link:hover {
+    text-decoration: none;
+    margin-right: 35px;
+    color: #191a1b;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#section{
+    padding-top: 5vw;
+    position: fixed;
+    z-index: 9;
+    height: 100%;
+    width: 15vw;
+    background: #374850;
+}
+.side_bar1{
+    text-decoration: none;
+    color: white;
+}
+.side_bar1:hover{
+    text-decoration: none;
+    color: pink;
+}
+.side_bar{
+    text-decoration: none;
+    justify-content: left;
+    color: white;
+    font-size: 1.3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+}
+.side_bar:hover{
+    text-decoration: none;
+    justify-content: left;
+    color: pink;
+    font-size: 1.3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 15px;
+}
+.about{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    margin-left: 470px;
+    max-width: 50%;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    text-align: center;
+}
+
+.about p{
+    align-items: center;
+    display: 100%;
+    margin: auto;
+    text-shadow: 5px 5px #c5c6c7;
+}
+
+.services{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    margin-left: 470px;
+    max-width: 50%;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    text-align: center;
+}
+
+.services p{
+    align-items: center;
+    display: 100%;
+    margin: auto;
+}
+
+.section{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 60%;
+    margin: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    margin-left: 400px;
+    margin-top: 25px;
+    border-radius: 50px;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section:hover{
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 100ms, box-shadow 100ms;
+    transform: scale(1.05);
+}
+
+.section-left{
+    flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 65px;
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 25px;
+    box-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.thumbnailr img{
+    width: 150px;
+    border: 2px solid black;
+    border-radius: 26px;
+    margin-top: 25px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.thumbnail img:hover{
+    box-shadow: -10px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 100ms, box-shadow 100ms;
+    transform: scale(1.05);
+}
+
+.thumbnailr img:hover{
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 100ms, box-shadow 100ms;
+    transform: scale(1.05);
+}
+
+.text-big{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+
+.text-small{
+    font-size: 15px;
+    font-family:cursive;
+    color: rgb(85, 84, 84);
+}
+
+#ser1{
+    width: 10vw;
+    padding-top: 1vw;
+    padding-left: 25vw;
+}
+#ser2{
+    width: 10vw;
+    padding-top: 1vw;
+}
+#ser3{
+    width: 10vw;
+    padding-top: 1vw;
+}
+#ser4{
+    width: 10vw;
+    padding-top: 1vw;
+}
+#amrit{
+    width: 10vw;
+    padding-top: 5vw;
+    padding-left: 25vw;
+}
+#make_in_india{
+    width: 10vw;
+    padding-top: 5vw;
+}
+#digital{
+    width: 10vw;
+    padding-top: 5vw;
+}
+#incredible{
+    width: 10vw;
+    padding-top: 5vw;
+}
+.image{
+    padding-top: 3vw;
+    padding-left: 7vw;
+    justify-content: center;
+}
+#end_line{
+    padding-top: 15px;
+    padding-left: 100px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 90px;
+}
+#developer{
+    margin-bottom: 5vw;
+    padding-left: 100px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    text-decoration: underline;
+    margin-left: 90px;
+}
+#link{
+    text-decoration: none;
+}
+#quote {
+    z-index: 4;
+    padding-top: 15vw;
+    padding-left: 20vw;
+    position: absolute;
+    font-family: 'Niconne', cursive;
+    color: rgb(0 0 0);
+    font-size: 3vw;
+    font-weight: 1000;
+    background-size: cover;
+    position: relative;
+    background-image: url("../static/Images/train image.jpg");
+    height: 30vw;
+    margin-left: 150px;
+    text-shadow: 5px 5px #558ABB;
+}
+#box{
+    box-sizing: border-box;
+    padding-left: 17vw;
+    padding-right: 3vw;
+    display: flex;
+    position: relative;
+}
+
+.boxes{
+    padding-top: 3vw;
+    margin-top: 3vw;
+    border: #374850 solid 0.3vw;
+    position: relative;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    width: 15vw;
+    margin-left: 3.5vw;
+    box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.2);
+}
+
+.boxes:hover{
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 100ms, box-shadow 100ms;
+    transform: scale(1.05);
+}
+
+.icon{
+    border-radius: 50%;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+/* .marquee{
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 100px
+} */

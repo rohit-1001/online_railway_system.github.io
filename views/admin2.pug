@@ -1,0 +1,50 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title PNR Search-ROSH Railways
+  link(rel='icon' href='../static/Images/favicon.png')
+  link(rel='stylesheet' href='../static/style_login_and_register.css')
+  link(href='https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap' rel='stylesheet')
+header#header
+    #navig
+      img#logo1.head(src='../static/Images/final logo.png' alt='Logo')
+main.back
+    h1#search_res Admin Page
+    form.admin_form(action='/admin_search' method="post")
+        input#inputadmin(type='text' placeholder='Enter train number' name="train_no")
+        button#search_but Search
+    h2#search_res1 Search Results...
+    table(class="train_table" border="1")
+        thead 
+            tr
+                th Train No.
+                th Train Name 
+                th Total Seats
+                th Available Seats 
+                th Source 
+                th Destination 
+                th Date
+                th Time
+                th Action
+        form(action='/update_train_admin' method='POST')
+            tr
+                td #{items[0].train_no}
+                td
+                    input(type='text' name="train_name" required value=items[0].train_name)
+                td
+                    input(type='number' name="total_seats" value=items[0].total_seats)
+                td
+                    input(type='number' name="available_seats" required value=items[0].available_seats)
+                td
+                    input(type='text' name="source_station" required value=items[0].source_station)
+                td
+                    input(type='text' name="destination_station" required value=items[0].destination_station)
+                td
+                    input(type='text' name="train_date" required value=items[0].train_date)
+                td
+                    input(type='text' name="train_time" required value=items[0].train_time)
+                td
+                    input.input_none(type='text' name="train_no" value=items[0].train_no)
+                    button Update
+    form.admin_form(action='/logout' method="post")
+        button.admin_logout Logout

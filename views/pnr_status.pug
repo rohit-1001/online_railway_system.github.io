@@ -1,0 +1,53 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title PNR Search-ROSH Railways
+  link(rel='icon' href='../static/Images/favicon.png')
+  link(rel='stylesheet' href='../static/style_login_and_register.css')
+  link(href='https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap' rel='stylesheet')
+  //- #body_s(onload='func()')
+  header#header
+    #navig
+      img#logo.head(src='../static/Images/final logo.png' alt='Logo')
+      ul.nav
+        span.nav-item
+          a.nav-link.active(onclick='nav' href='index') Home
+        span.nav-item
+          a.nav-link(href='index#about') About
+        span.nav-item
+          a.nav-link(href='index#services') Services
+        span.nav-item
+          a.nav-link(href='contact') Contact Us
+        span.nav-item
+          a#login_button.nav-link(href='login') #{name}
+  section#section
+    div
+      ul.side_bar
+        a.side_bar1(href='pnr_status') PNR status
+      ul.side_bar
+        a.side_bar1(href='book') Book Ticket
+      ul.side_bar
+        a.side_bar1(href='cancel') Cancel Ticket
+      ul.side_bar
+        a.side_bar1(href='search_train_nameno') Search By Train
+      ul.side_bar
+        a.side_bar1(href='search_station') Search By station
+      ul.side_bar
+        a.side_bar1(href='rules') Rules for safety
+      ul.side_bar
+        a.side_bar1(href='other') Other
+  form(action="/pnr_status" method="post") 
+    .search
+        p PNR Status
+        div
+            input(name='pnr_status' type='number' placeholder='Enter PNR No.' required)
+            button#search Search
+  footer#footer_1
+    #images
+      img#amrit.image(src='../static/Images/amrit mahotsav.jpg' alt='Amrit Mahotsav')
+      img#make_in_india.image(src='../static/Images/make in india.jpg' alt='Make in India')
+      img#digital.image(src='../static/Images/Digital india.jpg' alt='Digital India')
+      img#incredible.image(src='../static/Images/incredible india.png' alt='Incredible India')
+    #end_line
+      span Copyright &copy; 2022 RoSh Railway Systems. All Rights Reserved.
+    #developer Developed by RoSh Technologies.

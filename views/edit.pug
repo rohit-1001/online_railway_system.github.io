@@ -1,0 +1,64 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Update Profile-ROSH Railways
+  link(rel='icon' href='../static/Images/favicon.png')
+  link(rel='stylesheet' href='../static/style_login_and_register.css')
+  link(href='https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap' rel='stylesheet')
+header#header
+    #navig
+        img#logo.head(src='../static/Images/final logo.png' alt='Logo')
+        ul.nav
+            span.nav-item
+                a.nav-link.active(onclick='nav' href='index') Home
+            span.nav-item
+                a.nav-link(href='index#about') About
+            span.nav-item
+                a.nav-link(href='index#services') Services
+            span.nav-item
+                a.nav-link(href='contact') Contact Us
+            span.nav-item
+                a#login_button.nav-link(href='login') #{name}
+section#section
+    div
+        ul.side_bar
+            a.side_bar1(href='pnr_status') PNR status
+        ul.side_bar
+            a.side_bar1(href='book') Book Ticket
+        ul.side_bar
+            a.side_bar1(href='cancel') Cancel Ticket
+        ul.side_bar
+            a.side_bar1(href='search_train_nameno') Search By Train
+        ul.side_bar
+            a.side_bar1(href='search_station') Search By station
+        ul.side_bar
+            a.side_bar1(href='rules') Rules for safety
+        ul.side_bar
+            a.side_bar1(href='other') Other
+form#contact-form(method='POST' action='/update')
+  section.sec
+    .contact
+        p Edit Profile
+        input#name.input(type='text' name="name" placeholder='Name' required value=item.user_name)
+        input#email.input(type='text' name="id" placeholder="User Id" required value=item.user_id)
+        input#contact.input(type='email' name="email" placeholder='E-mail Id' value=item.email)
+        input#address.input(type='text' name="contact" placeholder='Contact No.' required value=item.contact)
+        input#desciption.input(type='date' name="dob" placeholder='Date of Birth' required value=item.dob min="1900-01-01" max="2009-12-31")
+        <select class="input" name="gender" required value=item.gender>
+            <option value="unknown">Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+        </select>
+        input.input(type='password' name="password" placeholder='Password' required value=item.pass)
+        button Update
+footer#footer
+    #images
+        img#amrit.image(src='../static/Images/amrit mahotsav.jpg' alt='Amrit Mahotsav')
+        img#make_in_india.image(src='../static/Images/make in india.jpg' alt='Make in India')
+        img#digital.image(src='../static/Images/Digital india.jpg' alt='Digital India')
+        img#incredible.image(src='../static/Images/incredible india.png' alt='Incredible India')
+#end_line
+    span
+        | Copyright &copy; 2022 RoSh Railway Systems. All Rights Reserved.
+#developer
+    | Developed by RoSh Technologies.

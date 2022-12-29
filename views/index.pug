@@ -1,0 +1,131 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Rosh railways
+  link(rel='icon' href='../static/Images/favicon.png')
+  link(rel='stylesheet' href='../static/style_main_page.css')
+  link(rel='preconnect' href='https://fonts.googleapis.com')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+  link(href='https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Niconne&display=swap' rel='stylesheet')
+header#header(onload='func()')
+  #navig
+    img#logo.head(src='../static/Images/final logo.png' alt='Logo')
+    ul.nav
+      span.nav-item
+        a.nav-link.active(href='index' onmouseover="changeText(this)" onmouseout="changeText1(this)") Home
+      span.nav-item
+        a.nav-link(href='#about') About
+      span.nav-item
+        a.nav-link(href='#services') Services
+      span.nav-item
+        a.nav-link(href='contact') Contact Us
+      span.nav-item
+        a#login_button.nav-link(href='login') #{name}
+main
+  section#section
+    div
+      ul.side_bar
+        a.side_bar1(href='pnr_status') PNR status
+      ul.side_bar
+        a.side_bar1(href='book') Book Ticket
+      ul.side_bar
+        a.side_bar1(href='cancel') Cancel Ticket
+      ul.side_bar
+        a.side_bar1(href='search_train_nameno') Search By Train
+      ul.side_bar
+        a.side_bar1(href='search_station') Search By station
+      ul.side_bar
+        a.side_bar1(href='rules') Rules for safety
+      ul.side_bar
+        a.side_bar1(href='other') Other
+
+  article#article
+    .background
+      pre#quote.
+                          Travel 
+            As much as you can.
+            As far as you can.
+            As long as you can.
+            Life's not meant to
+            be lived in one place.
+    p#about
+    .about
+      p About
+    #box
+      #box1.boxes
+        img.icon(src='../static/Images/services.png' alt='')
+        h3 Services
+        br
+        |                     Confirmed reservation tickets will show the passenger and fare details along with berth or seat number(s) allocated to them on the ticket. If the reservation is not available on a particular train, the ticket has a wait-list number.
+        |                     IR offers various tourist services in this segment including Luxury tourist trains, Semi luxury trains, Buddhist special trains, Bharat Darshan trains, Aastha Circuit trains, and Steam trains.
+      #box2.boxes
+        img.icon(src='../static/Images/staff.jpg' alt='')
+        h3 Staff
+        br
+        |                     The Railways on Tuesday said it will recruit 1,48,463 people over the next one year as compared to the 43,678 people recruited on an average annually over the last eight years.
+        |                     This move came after Prime Minister Narendra Modi's instruction to recruit 10 lakh people in various departments and ministries in the next 18 months.Indian Railways is brand which gives you a different reputation in social life.
+      #box3.boxes
+        img.icon(src='../static/Images/awards.jpg' alt='')
+        h3 Awards
+        br
+        |                     Indian Railways is observing World Environment Day on 5th June, 2022 in an appropriate and befitting manner keeping in line with the theme of this year’s World Environment Day.
+        |                     Indian Railways have been awarded by the UIC International Sustainable Railway Awards (ISRA) in the category of “Best use of Zero-Carbon Technology” for feeding Solar Energy directly to 25 KV AC Traction System.
+      #box4.boxes
+        img.icon(src='../static/Images/jobs.png' alt='')
+        h3 Jobs
+        br
+        |                     IndGovtJobs updates recent and latest all Railway vacancy notifications listed in this page. We build this page only for Railway job seekers who are looking your career in Railways, Railway departments and Railway stations.
+        |                      There is no Interview (Viva Voce) after the written examination. For a very few specific (Group A and B) categories there is a Viva after the written exam.
+  aside#aside
+    // for ads
+  p#services
+  .about
+    p Services
+  section.section
+    .paras
+      p.sectionTag.text-big Food service
+      p.sectionSubTag.text-small
+        | Why should the food menu reflect all the excitement, always? The beverage menu is also an integral part of the food offering at a restaurant. Very rarely do people order just food and leave out beverages. If nothing, at least a fresh lime soda or a cola is ordered along with a meal, or sometimes 
+        | Hyper-local is the buzz word of the moment, and we think it is exciting! Is this something you need to consider, and if so, what does it take to make your food service business offer hyper-local cuisine? What is the culinary experience you can create for your customers from hyper-local food, and how interested do.
+    .thumbnail
+      img.imgFluid(src='../static/Images/food.png' alt='food')
+  section#about.section.section-left
+    .paras
+      p.sectionTag.text-big Health Services
+      p.sectionSubTag.text-small
+        | The most common form of home health care is some type of nursing care depending on the person's needs. In consultation with the doctor, a registered nurse will set up a plan of care. Nursing care may include wound dressing, ostomy care, intravenous therapy, administering medication, monitoring the general health of the patient, pain control, and other health support.
+        | Some patients may need help relearning how to perform daily duties or improve their speech after an illness or injury. A physical therapist can put together a plan of care to help a patient regain or strengthen use of muscles and joints.  A physical therapist can put together a plan of care to help a patient regain or strengthen use of muscles and joints.
+    .thumbnailr
+      img.imgFluid(src='../static/Images/health.png' alt='laptop image')
+  section#services.section
+    .paras
+      p.sectionTag.text-big Security Services
+      p.sectionSubTag.text-small
+        | Single invoicing and tracking 24 Hrs. Control Room Standard operating systems Economies of scale Single spot responsibility Business confidentiality.Branch recruit personnel according to stringent laid down parameters this includesEducation, age, physical fitness, language proficiency and background.
+        | Zodiac Security Services commits to provide the best Security Guard Services in Mumbai with a strong team working 24X7. We have become the largest organization providing the best Security Services in Mumbai.The goal was to create the best Security Agency In Mumbai that provides the premium quality security to the high-profile clients.
+    .thumbnail
+      img.imgFluid(src='../static/Images/security.png' alt='laptop image')
+footer#footer
+  #images
+    img#amrit.image(src='../static/Images/amrit mahotsav.jpg' alt='Amrit Mahotsav')
+    img#make_in_india.image(src='../static/Images/make in india.jpg' alt='Make in India')
+    img#digital.image(src='../static/Images/Digital india.jpg' alt='Digital India')
+    img#incredible.image(src='../static/Images/incredible india.png' alt='Incredible India')
+  #end_line
+    span
+      | Copyright &copy; 2022 RoSh Railway Systems. All Rights Reserved.
+  #developer
+    | Developed by RoSh Technologies.
+  //- script.
+  //-   function func(){
+  //-     var path = __dirname+'/currentUser.json'
+  //-     if(fs.existsSync(path)){
+  //-         document.getElementById(login_button).innerHTML="#{value.user_name}"
+  //-         console.log(document.getElementById(login_button).innerHTML)
+  //-     }
+  //-   }
+  script(type="application/x-javascript" src='../static/index.js')

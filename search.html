@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>PNR Search-ROSH Railways</title>
+  <link rel="icon" href="../static/Images/favicon.png">
+  <link rel="stylesheet" href="../static/style_login_and_register.css">
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&amp;display=swap" rel="stylesheet">
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"/>
+</head>
+<div id="body_s">
+  <header id="header">
+    <div id="navig"><img class="head" id="logo" src="../static/Images/final logo.png" alt="Logo">
+      <ul class="nav"><span class="nav-item"><a class="nav-link active" onclick="nav" href="index">Home</a></span><span class="nav-item"><a class="nav-link" href="index#about">About</a></span><span class="nav-item"><a class="nav-link" href="index#services">Services</a></span><span class="nav-item"><a class="nav-link" href="contact">Contact Us</a></span><span class="nav-item"><a class="nav-link" href="login">Login</a></span></ul>
+    </div>
+  </header>
+  <section id="section">
+    <div>
+      <ul class="side_bar"><a class="side_bar1" href="search">PNR status</a></ul>
+      <ul class="side_bar"><a class="side_bar1" href="#">Berth Availability</a></ul>
+      <ul class="side_bar"><a class="side_bar1" href="#">Book Ticket</a></ul>
+      <ul class="side_bar"><a class="side_bar1" href="#">Cancel Ticket</a></ul>
+      <ul class="side_bar"><a class="side_bar1" href="#">View complete schedule</a></ul>
+      <ul class="side_bar"><a class="side_bar1" href="#">Rules for safety</a></ul>
+      <ul class="side_bar"><a class="side_bar1" href="#">Other</a></ul>
+    </div>
+  </section>
+  <div class="search">
+    <p>Train Enquiry</p>
+    <div>
+      <input name="pnr_check" type="number" placeholder="Enter train No. to check train info">
+      <p class="sub">Search</p>
+    </div>
+  </div>
+  <footer id="footer_1">
+    <div id="images"><img class="image" id="amrit" src="../static/Images/amrit mahotsav.jpg" alt="Amrit Mahotsav"><img class="image" id="make_in_india" src="../static/Images/make in india.jpg" alt="Make in India"><img class="image" id="digital" src="../static/Images/Digital india.jpg" alt="Digital India"><img class="image" id="incredible" src="../static/Images/incredible india.png" alt="Incredible India"></div>
+    <div id="end_line"><span>Copyright &copy; 2022 RoSh Railway Systems. All Rights Reserved.</span></div>
+    <div id="developer">Developed by RoSh Technologies.</div>
+  </footer>
+</div>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PNR Search-ROSH Railways</title>
+    <link rel="icon" href="static/Images/favicon.png">
+    <link rel="stylesheet" href="static/style_login_and_register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body id="body2">
+    <header id="header">
+        <div id="navig">
+            <img class="head"  id="logo" src="static/Images/final logo.png" alt="Logo">
+            <ul class="nav">
+                <span class="nav-item">
+                    <a onclick="nav" class="nav-link active" href="#">Home</a>
+                </span>
+                <span class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </span>
+                <span class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </span>
+                <span class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </span>
+                <span class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                </span>
+            </ul>
+        </div>
+    </header>
+    <section id="section">
+        <div>
+            <ul class="side_bar"><a class="side_bar1" href="search.html">PNR status</a></ul>
+            <ul class="side_bar"><a class="side_bar1" href="#">Berth Availability</a></ul>
+            <ul class="side_bar"><a class="side_bar1" href="#">Book Ticket</a></ul>
+            <ul class="side_bar"><a class="side_bar1" href="#">Cancel Ticket</a></ul>
+            <ul class="side_bar"><a class="side_bar1" href="#">View complete schedule</a></ul>
+            <ul class="side_bar"><a class="side_bar1" href="#">Rules for safety</a></ul>
+            <ul class="side_bar"><a class="side_bar1" href="#">Other</a></ul>
+        </div>
+    </section>
+    <div class="search">
+        <p>Train Enquiry</p>
+        <div>
+            <input name="pnr_check" type="number" placeholder="Enter PNR No. to check train schedule">
+            <button class="sub" >Submit</button>
+        </div>
+    </div>
+    train_no int UNIQUE,
+	train_name varchar(50),
+    total_seats int,
+    available_seats int,
+    source_station varchar(50),
+    destination_station varchar(50),
+    train_date date
+);
+    <table border="1">
+        <tr>
+            <th>Sr. No.</th>
+            <th>Train No.</th>
+            <th>Train Name</th>
+            <th>Available Seats</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Date</th>
+        </tr>
+
+        <% if(train.length>0){%>
+            <% for(var i=0;i<train.length;i++){ %>
+                <tr>
+                    <td><%- (i+1)  %></td>
+                    <td><%- train[i].train_no  %></td>
+                    <td><%- train[i].train_name  %></td>
+                    <td><%- train[i].available_seats  %></td>
+                    <td><%- train[i].source_station  %></td>
+                    <td><%- train[i].destination_station  %></td>
+                    <td><%- train[i].train.date  %></td>
+                </tr>    
+            <% } %>
+        <%  }else{ %>
+            <script>
+                alert("No such train found.")
+            </script>
+        <% } %>
+    </table>
+    <footer id="footer">
+        <div id="images">
+            <img class="image" id="amrit" src="static/Images/amrit mahotsav.jpg" alt="Amrit Mahotsav">
+            <img class="image" id="make_in_india" src="static/Images/make in india.jpg" alt="Make in India">
+            <img class="image" id="digital" src="static/Images/Digital india.jpg" alt="Digital India">
+            <img class="image" id="incredible" src="static/Images/incredible india.png" alt="Incredible India">
+        </div>
+        <div id="end_line">
+            <span>
+                Copyright &copy; 2022 RoSh Railway Systems. All Rights Reserved.
+            </span>
+        </div>
+        <div id="developer">
+            Developed by RoSh Technologies.
+        </div>
+    </footer>
+</body>
+</html> -->
+
+[{"user_name":"Ten10","user_id":"ten10","email":"ten10@gmail.com","contact":"12345","dob":"2022-11-07","gender":"Male","pass":"147"}]
